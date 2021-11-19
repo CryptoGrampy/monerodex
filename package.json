@@ -1,0 +1,26 @@
+{
+    "name": "monero-projectpedia",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "dev": "ts-node-dev --respawn ./src/index.ts",
+        "build": "ts-node ./src/index.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CryptoGrampy/monero-projectpedia.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/CryptoGrampy/monero-projectpedia/issues"
+    },
+    "homepage": "https://github.com/CryptoGrampy/monero-projectpedia#readme",
+    "devDependencies": {
+        "@types/node": "^16.11.8",
+        "ts-node": "^10.4.0",
+        "ts-node-dev": "^1.1.8",
+        "typescript": "^4.5.2",
+        "yaml": "^1.10.2"
+    }
+}

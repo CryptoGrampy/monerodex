@@ -1,0 +1,28 @@
+{
+    "projects": [{
+        "name": "Monero GUI Wallet",
+        "description": "This is the GUI wallet for the core Monero implementation.",
+        "repositoryUrl": "https://github.com/monero-project/monero-gui/",
+        "contributorGuideUrl": null,
+        "guideUrl": "https://github.com/monero-ecosystem/monero-GUI-guide",
+        "skills": [
+            "qml",
+            "qt"
+        ],
+        "categories": [
+            "software"
+        ],
+        "contact": "https://matrix.to/#/#monero-dev:monero.social",
+        "websiteUrl": "https://www.getmonero.org/downloads/#gui",
+        "tags": [
+            "blockchain",
+            "cryptocurrency",
+            "cryptography",
+            "p2p"
+        ],
+        "helpWanted": true
+    }],
+    "meta": {
+        "modifiedDate": "2021-11-19T04:32:28.933Z"
+    }
+}
