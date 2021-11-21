@@ -7,8 +7,7 @@ guideUrl: https://github.com/monero-ecosystem/monero-GUI-guide
 skills:
   - qml
   - qt
-categories: 
-  - software
+category: software
 contact: https://matrix.to/#/#monero-dev:monero.social
 tags: 
   - blockchain

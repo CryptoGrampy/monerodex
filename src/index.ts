@@ -2,13 +2,21 @@ import YAML from 'yaml'
 import fs from 'fs'
 import path from 'path'
 
-export interface ProjectDataProtocolV1 {
+enum ProjectCategory {
+  Software = "SOFTWARE",
+  Research = "RESEARCH",
+  Art = "ART",
+  Legal = "LEGAL",
+  Abandonware = "ABANDONWARE"
+}
+
+export interface MonerodexProjectV1 {
   name: string
   description: string
   repositoryUrl?: string
   skills: string[]
   contact: string
-  categories: string[]
+  category: ProjectCategory
   websiteUrl?: string
   tags: string[]
   guideUrl?: string
@@ -16,8 +24,8 @@ export interface ProjectDataProtocolV1 {
   helpWanted: boolean
 }
 
-export interface MoneroProjectpediaV1 {
-  projects: ProjectDataProtocolV1[]
+export interface MonerodexProjectDataV1 {
+  projects: MonerodexProjectV1[]
   meta: {
     modifiedDate: Date
   }
@@ -25,7 +33,7 @@ export interface MoneroProjectpediaV1 {
 
 // TODO: Fix filepathing
 const directoryPath = path.join(__dirname, '../projects');
-const projectpedia: MoneroProjectpediaV1 = {
+const projectData: MonerodexProjectDataV1 = {
   projects: [],
   meta: {
     modifiedDate: new Date()
@@ -42,12 +50,12 @@ fs.readdir(directoryPath, (err, files) => {
     files.forEach((file) => {
         const yamlFiles = fs.readFileSync(`./projects/${file}`, 'utf8')
 
-        const project: ProjectDataProtocolV1 = YAML.parse(yamlFiles)
-        projectpedia.projects.push(project)
+        const project: MonerodexProjectV1 = YAML.parse(yamlFiles)
+        projectData.projects.push(project)
     });
 
 
   // Generate JSON output
 
-  fs.writeFileSync('./out/monero-projectpedia.json', JSON.stringify(projectpedia), 'utf8')
+  fs.writeFileSync('./out/monerodex-project-data.json', JSON.stringify(projectData), 'utf8')
 });
