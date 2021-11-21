@@ -57,5 +57,5 @@ fs.readdir(directoryPath, (err, files) => {
 
   // Generate JSON output
 
-  fs.writeFileSync('./out/monerodex-project-data.json', JSON.stringify(projectData), 'utf8')
+  fs.writeFileSync('./out/monerodex-project.json', JSON.stringify(projectData), 'utf8')
 });

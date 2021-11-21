@@ -1,6 +1,6 @@
-# Monero-Projectpedia
+# Monerodex
 
-- [Monero-Projectpedia](#monero-projectpedia)
+- [Monerodex](#monerodex)
   - [About](#about)
   - [Contributing](#contributing)
   - [Consuming](#consuming)
@@ -8,22 +8,24 @@
   - [Donate](#donate)
 ## About
 
-The goal of Monero Projectpedia is to simply create a structured catalog of projects happening in the Monero space.  This catalog will be available as an importable JSON object that can be used in any way your heart desires.  
+The goal of Monerodex is to simply create an up-to-date, structured, and consumable catalog of projects, merchants, ??? in the Monero space.  This dex will be available as an importable JSON object that can be used in any way your heart desires.  
 
 ## Contributing
 
-Contribute to this project by copying the project-example.yml file, adding in your project, and saving it in the projects folder.
+Contribute to this project by copying the project-example.yml file, adding in your project information following the MonerodexProjectV1 interface, and saving it in the projects folder as a yml file.
 
 ## Consuming
 
-Use the out/monero-projectpedia.json file in your project.
+Use the out/monerodex-project.json file in your project.
 
 ## TODO
 
 - Add projects
+- Think about merchantdex
 - Add data schemas to Readme
+- Review schema with others
 - Add file links in Readme
-- Add Github Action for build
+- Add Github Action for continuous build
 
 ## Donate
 
